@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Register Form</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <h2>Registration Form</h2>
+  <form action="/register" method="POST">
+    <input type="text" name="name" placeholder="Name" required><br><br>
+    <input type="number" name="age" placeholder="Age" required><br><br>
+    
+    Gender:
+    <label><input type="radio" name="gender" value="male" required> Male</label>
+    <label><input type="radio" name="gender" value="female" required> Female</label><br><br>
+
+    Country:
+    <select name="country" required>
+      <option value="indian">Indian</option>
+      <option value="american">American</option>
+    </select><br><br>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <h3>Registered Users:</h3>
+  <ul>
+    <% users.forEach(user => { %>
+      <li><%= user.name %> | <%= user.age %> | <%= user.gender %> | <%= user.country %></li>
+    <% }) %>
+  </ul>
+</body>
+</html>
