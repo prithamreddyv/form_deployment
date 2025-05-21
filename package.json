@@ -1,11 +1,11 @@
 {
   "name": "form_deployment",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +15,17 @@
     "dotenv": "^16.4.7",
     "ejs": "^3.1.10",
     "express": "^5.1.0",
+    "express-session": "^1.18.1",
+    "firebase-admin": "^13.2.0",
     "mysql2": "^3.14.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prithamreddyv/form_deployment.git"
+  },
+  "bugs": {
+    "url": "https://github.com/prithamreddyv/form_deployment/issues"
+  },
+  "homepage": "https://github.com/prithamreddyv/form_deployment#readme",
+  "description": ""
 }
